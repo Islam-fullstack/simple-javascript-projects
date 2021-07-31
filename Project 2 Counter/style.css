@@ -72,6 +72,8 @@ body{
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     box-shadow: 0 0 15px #aaa;
+    background-color: #eee;
+    color:rgb(51, 51, 51);
 }
 
 .decrease{
@@ -79,7 +81,7 @@ body{
 }
 
 .decrease:hover{
-    background-color: rgb(255, 67, 67);
+    color: red;
 }
 
 .increase{
@@ -87,5 +89,5 @@ body{
 }
 
 .increase:hover{
-    background-color: #5af567;
+    color: #32d63f;
 }

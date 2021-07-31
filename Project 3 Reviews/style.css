@@ -56,9 +56,13 @@ body{
     border-radius: 10px 15px 2px 10px;
     text-align: center;
     color: #666;
+    position: relative;
 }
 
 .main .card .person-photo{
+    position: absolute;
+    z-index: 0;
+    position: relative;
     height: 120px;
     background-image: url(depositphotos_208866120-stock-photo-serious-female-software-developer-creating.jpg);
     background-position: center top;
@@ -67,6 +71,38 @@ body{
     border-radius: 50%;
     margin: 0 auto;
     background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.main .card .person-photo::before{
+    content: '"';
+    position: absolute;
+    color: white;
+    left: -5px;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 30px; */
+    border-radius: 50%;
+    background-color: blue;
+    font-size: 18px;
+    font-weight: 900;
+    /* z-index: 11; */
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    background-color: rgb(70, 70, 255);
+    right: 175px;
+    top: 20px;
 }
 
 .main .card .person-name{

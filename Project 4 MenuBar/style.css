@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #395FF4;
+    color: #333;
+    font-family: sans-serif;
+}
+
+
+.menuBar{
+    min-height: 80px;
+    background-color: white;
+    box-shadow: 0 0px 12px black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menuLogo{
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: black;
+    text-shadow: 5px 5px 10px black;
+}
+
+.menuLogo .blueText{
+    color: blue;
+}
+
+.menuItem{
+    display: flex;
+    list-style-type: none;
+}
+
+.menuItem li {
+    margin-left: 20px;
+    font-size: 22px;
+    
+}
+
+.menuItem li a{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+    background-color: #eee;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.menuItem li a:hover{
+    background-color: rgb(174, 144, 194);
+    color: white;
+    box-shadow: 0 0 9px hotpink;
+    transform: scale(1.05);
+}
+
+.socIcons {
+    display: flex;
+    justify-content: space-around;
+    color: #395FF4;
+}
+
+.socIcons i{
+    padding: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+
+.socIcons i:hover{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+

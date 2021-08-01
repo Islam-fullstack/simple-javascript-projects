@@ -64,7 +64,7 @@ body{
     z-index: 0;
     position: relative;
     height: 120px;
-    background-image: url(depositphotos_208866120-stock-photo-serious-female-software-developer-creating.jpg);
+    background-image: url(A-Day-in-the-Life-of-a-Web-Developer-2-or3dqau4fp30hw7i5yg12kruo142zihlxj7qu4rbio.jpg);
     background-position: center top;
     background-size: cover;
     width: 120px;
@@ -78,10 +78,10 @@ body{
     content: '"';
     position: absolute;
     color: white;
-    left: -5px;
-    top: -5px;
-    width: 40px;
-    height: 40px;
+    left: 0px;
+    top: 0px;
+    width: 35px;
+    height: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,12 +131,19 @@ body{
 
 .slider{
     display: flex;
-    color: blue;
+    color: white;
     justify-content: space-around;
     font-size: 25px;
-    cursor: pointer;
+
     width: 50%;
-    margin: 10px auto;
+    margin: 15px auto;
+}
+
+.slider span{
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: rgb(118, 69, 163);
+    border-radius: 15px 0 15px 0;
 }
 
 .btn{

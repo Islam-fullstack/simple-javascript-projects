@@ -98,7 +98,18 @@ body{
     display: none;
 }
 
+.nav-icon{
+    display: none;
+}
+
 @media screen and ( max-width: 1050px ) {
+    
+    .nav-icon{
+        display: inline-block;
+        border: 1px solid blue;
+        
+    }
+    
     .socIcons{
         display: none;
     }

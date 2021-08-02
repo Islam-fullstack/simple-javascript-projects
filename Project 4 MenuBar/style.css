@@ -25,9 +25,10 @@ body{
     align-items: center;
     justify-content: space-between;
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
+
 
 .menuLogo{
     font-size: 35px;
@@ -93,3 +94,50 @@ body{
     transform: rotate(360deg);
 }
 
+.menuItemMobile{
+    display: none;
+}
+
+@media screen and ( max-width: 1050px ) {
+    .socIcons{
+        display: none;
+    }
+    .menuItem{
+        display: none;
+    }
+    body{
+        background-color: #333;
+    }
+
+    .menuItemMobile{
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+    }
+    
+    .menuItemMobile li {
+        margin-left: 20px;
+        font-size: 22px;
+        
+    }
+    
+    .menuItemMobile li a{
+        color: #000;
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        background-color: #eee;
+        transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+    }
+    
+    .menuItemMobile li a:hover{
+        background-color: rgb(174, 144, 194);
+        color: white;
+        box-shadow: 0 0 9px hotpink;
+        transform: scale(1.05);
+    }
+
+}

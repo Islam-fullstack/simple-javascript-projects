@@ -104,11 +104,32 @@ body{
 
 @media screen and ( max-width: 1050px ) {
     
+    .menuBar::after{
+        position: relative;
+    }
+
+    .menuItem{
+        display: flex;
+        position: absolute;
+    }
+
+
     .nav-icon{
         display: block;
         cursor: pointer;
         padding: 5px;
         color: blue;
+    }
+    
+    .nav-icon i{
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        
+    }
+    
+    .nav-icon:hover i{
+        transform: rotate(90deg);
     }
     
     .socIcons{
